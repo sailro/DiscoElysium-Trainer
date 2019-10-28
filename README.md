@@ -18,7 +18,7 @@ How to use the trainer:
 - Use keypad `2` `3` to decrease/increase cap for all abilities.
 - Run unload.bat to disable the trainer.
 
-You can compile everything or simply use the [demo release](https://github.com/sailro/DiscoElysium-Trainer/releases).
+You can compile everything or simply use the [binary release](https://github.com/sailro/DiscoElysium-Trainer/releases).
 
 Have fun !
 
