@@ -11,11 +11,11 @@ So we have a very simple trainer for the excellent [Disco Elysium](https://store
 How to use the trainer:
 - Start a new game or load any savegame
 - Go back to the windows desktop
-- Run load.bat to inject the trainer into the process (you do not need to copy files in a specific location).
-- Use keypad / * to remove/add 100 Réal
-- Use keypad 8 9 to remove/add 1 Skill point
-- Use keypad 5 6 to remove/add 10 XPs
-- Use keypad 2 3 to decrease/increase cap for all abilities.
+- Run `load.bat` to inject the trainer into the process (you do not need to copy files in a specific location).
+- Use keypad `/` `*` to remove/add 100 Réal
+- Use keypad `8` `9` to remove/add 1 Skill point
+- Use keypad `5` `6` to remove/add 10 XPs
+- Use keypad `2` `3` to decrease/increase cap for all abilities.
 - Run unload.bat to disable the trainer.
 
 You can compile everything or simply use the [demo release](https://github.com/sailro/DiscoElysium-Trainer/releases).
