@@ -21,3 +21,5 @@ How to use the trainer:
 You can compile everything or simply use the [demo release](https://github.com/sailro/DiscoElysium-Trainer/releases).
 
 Have fun !
+
+![demo](https://github.com/sailro/DiscoElysium-Trainer/raw/master/demo.jpg)
