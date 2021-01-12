@@ -37,7 +37,7 @@ namespace DiscoElysium.Trainer
 				var modifier = ability.GetModifierOfType(ModifierType.INITIAL_DICE);
 				if (modifier == null)
 				{
-					modifier = new Modifier(ModifierType.INITIAL_DICE, 1, LocalizationManager.GetLocalizedTerm("BASE_ABILITY_LABEL"));
+					modifier = new Modifier(ModifierType.INITIAL_DICE, 1, () => LocalizationManager.GetLocalizedTerm("BASE_ABILITY_LABEL"));
 					ability.Add(modifier);
 				}
 				modifier.Amount += value;
