@@ -11,7 +11,17 @@ namespace DiscoElysium.Trainer
 			get
 			{
 				var result = SingletonComponent<World>.Singleton.gameObject;
-				return result != null ? result : new GameObject();
+				if (result != null) 
+					return result;
+
+				result = GameObject.Find(typeof(Loader).FullName);
+				if (result != null) 
+					return result;
+
+				result = new GameObject(typeof(Loader).FullName);
+				Object.DontDestroyOnLoad(result);
+
+				return result;
 			}
 		}
 
@@ -30,9 +40,8 @@ namespace DiscoElysium.Trainer
 
 		public static void Unload()
 		{
-			var trainer = Trainer;
-			if (trainer != null)
-				Object.DestroyImmediate(trainer);
+			Object.DestroyImmediate(Trainer);
+			Object.DestroyImmediate(HookObject);
 		}
 	}
 }
