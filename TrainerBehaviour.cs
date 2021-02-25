@@ -31,7 +31,7 @@ namespace DiscoElysium.Trainer
 		{
 			var characterSheet = SingletonComponent<CharsheetView>.Singleton.character;
 
-			foreach (var abilityType in new AbilityType[] { AbilityType.FYS, AbilityType.INT, AbilityType.MOT, AbilityType.PSY })
+			foreach (var abilityType in new[] { AbilityType.FYS, AbilityType.INT, AbilityType.MOT, AbilityType.PSY })
 			{
 				var ability = characterSheet.GetAbility(abilityType);
 				var modifier = ability.GetModifierOfType(ModifierType.INITIAL_DICE);

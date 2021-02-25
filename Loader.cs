@@ -11,7 +11,7 @@ namespace DiscoElysium.Trainer
 			get
 			{
 				var result = SingletonComponent<World>.Singleton.gameObject;
-				return result ?? new GameObject();
+				return result != null ? result : new GameObject();
 			}
 		}
 
